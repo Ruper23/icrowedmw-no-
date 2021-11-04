@@ -32,3 +32,13 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 });
+let burgIcon = document.querySelector('.header-menu__icon');
+
+if (burgIcon) {
+	let burgMenu = document.querySelector('.burger-menu-wrap');
+	burgIcon.addEventListener("click", function (e) {
+		burgMenu.classList.toggle('active');
+		burgIcon.classList.toggle('active');
+
+	})
+}
